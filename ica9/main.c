@@ -16,47 +16,54 @@ int main()
 	printf("\n*****************\n");
 	Display(start, NULL, 50);// marks ovr 50%
 
-	menu();
+	
 
-	int choice;
-	choice = scanf_s("%d", &choice);
+	char choice = '0';
+	
 
-	switch (choice)
+	while (choice != '5')
 	{
-	case 1:
-		printf("\n*****************\n");
-		orderIDnode(start);
-		Display(start, NULL, 0);
-		printf("\n*****************\n");
-		return main();
-		break;
-	case 2:
-		printf("\n*****************\n");
-		orderMARKnode(start);
-		Display(start, NULL, 0);
-		printf("\n*****************\n");
-		return main();
-		break;
-	case 3:
-		printf("\n*****************\n");
-		Display(start, NULL, 0);
-		printf("\n*****************\n");
-		return main();
-		break;
-	case 4:
-		printf("\n*****************\n");
-		Display(start, NULL, 50);
-		printf("\n*****************\n");
-		return main();
-		break;
-	case 5:
-		exit(EXIT_SUCCESS);
-		break;
-	default:
-		printf("wrong Input\n");
-		return main();
-		break;
+		choice='0';
+		menu();
+		printf("\n");
+		scanf_s("%c", &choice,sizeof(char));
+		printf("\n");
+
+		switch (choice)
+		{
+		case '1':
+			printf("\n*****************\n");
+			orderIDnode(start);
+			Display(start, NULL, 0);
+			printf("\n*****************\n");
+			break;
+		case '2':
+			printf("\n*****************\n");
+			orderMARKnode(start);
+			Display(start, NULL, 0);
+			printf("\n*****************\n");
+			break;
+		case '3':
+			printf("\n*****************\n");
+			Display(start, NULL, 0);
+			printf("\n*****************\n");
+			break;
+		case '4':
+			printf("\n*****************\n");
+			Display(start, NULL, 50);
+			printf("\n*****************\n");
+			break;
+		case '5':
+			break;
+		default:
+			printf("wrong Input\n");
+			break;
+			
+		}
+		getchar();
 	}
+	exit(EXIT_SUCCESS);
+	
 	
 	/*do
 	{

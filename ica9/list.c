@@ -67,7 +67,7 @@ void orderMARKnode(StudentN* head)
 		temp = curnt->next != NULL ? curnt->next : NULL;
 		while (temp != NULL)
 		{
-			if (curnt->mark > temp->mark)
+			if (curnt->mark < temp->mark)
 			{
 				StudentN tempData = { curnt->name,curnt->ID,curnt->mark };
 				curnt->ID = temp->ID; curnt->mark = temp->mark; curnt->name = temp->name;
