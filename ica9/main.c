@@ -46,7 +46,6 @@ int main()
 		default:
 			printf("wrong Input\n");
 			break;
-			
 		}
 		getchar();
 	}
