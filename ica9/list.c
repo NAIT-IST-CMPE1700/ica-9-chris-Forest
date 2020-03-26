@@ -111,15 +111,3 @@ void menu()
 	printf("Press 5 to exit \n\n");
 	printf("Enter your choice: ");
 }
-//string array(2D-array of chars) for 10 names
-// int array for 10 id numbers reping names from sring array
-// araay for marks 10 in size reping names from sring array
-// bulid link list of struct in list.h id in asending order
-// another list in desending order of marks
-
-// continually dis play a menu (user input) with following options
-// 1) disply in oredre from id #
-// 2) display desendig order with marcks
-// 3) display names, mark and rank of student (id#) 
-// 4) disply name(s) of students above a passing value(50%)
-// 5) exit
