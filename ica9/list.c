@@ -14,7 +14,7 @@ StudentN* createNode(int ID, float marks, char* name)
 }
 
 // this will create a list of values with and id number, grde and name 
-StudentN* CreateList(int sise)
+StudentN* CreateList(int sise,char** names)
 {
 	srand(time(NULL));
 	int rdmNum = rand() % 100 + 1;
